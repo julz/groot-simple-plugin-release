@@ -1,0 +1,21 @@
+name: groot-simple-plugin
+version: 0+dev.6
+commit_hash: non-git
+uncommitted_changes: false
+jobs:
+- name: groot-simple
+  version: 816093f579df61b212573878465276ec2c3be152
+  fingerprint: 816093f579df61b212573878465276ec2c3be152
+  sha1: afb66cc31c74b0327113e690cb3d5bfcb258ac5e
+packages:
+- name: golang
+  version: 10711734a29c2b09168cdaa8c5543a960f1af8bb
+  fingerprint: 10711734a29c2b09168cdaa8c5543a960f1af8bb
+  sha1: cb765cb17e1127ca028a8c98789b1e9f7cb3c051
+  dependencies: []
+- name: groot-simple
+  version: f28344c7e9961d42709e9d2638eabd9acfca9b15
+  fingerprint: f28344c7e9961d42709e9d2638eabd9acfca9b15
+  sha1: b435cae7eb5c1f1f5d8f78d895e033849c1fc69e
+  dependencies:
+  - golang

@@ -1,0 +1,11 @@
+set -e
+
+export GOROOT=/var/vcap/packages/golang
+export PATH=$GOROOT/bin:$PATH
+
+export GOPATH=$BOSH_INSTALL_TARGET
+mkdir $GOPATH/src
+cp -R * $GOPATH/src/
+
+go install github.com/julz/groot-simple
+rm -rf $GOPATH{src,pkg}

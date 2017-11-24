@@ -1,0 +1,8 @@
+---
+name: groot-simple
+
+dependencies:
+  - golang
+
+files:
+  - github.com/julz/groot-simple/**

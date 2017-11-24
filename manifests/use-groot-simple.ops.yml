@@ -1,0 +1,17 @@
+- type: replace
+  path: /releases/-
+  value:
+    name: groot-simple-plugin
+    version: latest
+
+- type: replace
+  path: /instance_groups/name=garden/jobs/name=garden/properties/garden/image_plugin?
+  value: /var/vcap/packages/groot-simple/bin/groot-simple
+
+- type: replace
+  path: /instance_groups/name=garden/jobs/-
+  value:
+    name: groot-simple
+    release: groot-simple-plugin
+
+
